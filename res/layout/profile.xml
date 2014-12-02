@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1" android:background="#fff3f3f3">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp" android:background="@drawable/card" android:padding="15dp"
+            android:id="@+id/topLineProfile">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" android:id="@+id/labelsDoctorData">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Рафальський Є.С."
+                    android:id="@+id/profile_name"
+                    android:textColor="@color/main_blue"
+                    android:textStyle="bold" android:textSize="20dp"
+                    android:layout_alignParentTop="true" android:layout_alignLeft="@+id/profile_city_and_age"
+                    android:autoText="false"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Київ, 47 років"
+                    android:id="@+id/profile_city_and_age"
+                    android:textColor="#ff707070" android:textStyle="bold" android:layout_below="@+id/profile_name"
+                    android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSettingsProfile" android:src="@drawable/setting_button" android:padding="0dp"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_gravity="center_horizontal"
+            android:id="@+id/buttonsProfile">
+        <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_above="@+id/rlTemplate" android:padding="15dp"
+                android:id="@+id/fourButtons">
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_weight="1">
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_column="0" android:layout_weight="1"
+                        android:background="@drawable/profile_rounded_btn" android:layout_marginBottom="7.5dp"
+                        android:layout_marginRight="7.5dp" android:id="@+id/rlAnalysesBtn">
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_weight="1"
+                        android:background="@drawable/profile_rounded_btn" android:layout_marginLeft="7.5dp"
+                        android:layout_marginBottom="7.5dp" android:id="@+id/rlResearchesBtn">
+                </RelativeLayout>
+            </TableRow>
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_weight="1">
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_weight="1"
+                        android:background="@drawable/profile_rounded_btn" android:layout_marginTop="7.5dp"
+                        android:layout_marginRight="7.5dp" android:id="@+id/rlDrugsBtn">
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:layout_weight="1"
+                        android:background="@drawable/profile_rounded_btn" android:layout_marginLeft="7.5dp"
+                        android:layout_marginTop="7.5dp" android:id="@+id/rlPatientsBtn">
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:background="@drawable/profile_rounded_btn" android:id="@+id/rlTemplate" android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" android:layout_marginBottom="15dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/templates"
+                        android:id="@+id/textView3" android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+

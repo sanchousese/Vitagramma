@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="analyses">анализы</string>
+    <string name="experiments">исследования</string>
+    <string name="drugs">препараты</string>
+    <string name="patients">пациенты</string>
+    <string name="templates">шаблоны</string>
+    <string name="my_patients">Мои пациенты</string>
+</resources>

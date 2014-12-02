@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="motto">зберігання і управління даними медичних досліджень</string>
+    <string name="forget_pass">Забули пароль?</string>
+    <string name="login">УВІЙТИ</string>
+    <string name="registration">РЕЄСТРАЦІЯ</string>
+    <string name="analyses">аналізи</string>
+    <string name="experiments">дослідження</string>
+    <string name="drugs">препарати</string>
+    <string name="patients">пацієнти</string>
+    <string name="templates">шаблони</string>
+    <string name="my_patients">Мої пацієнти</string>
+</resources>
