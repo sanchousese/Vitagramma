@@ -142,7 +142,6 @@ public class LoginActivity extends Activity implements View.OnClickListener{
             if (response.contains("profile"))
                 activity.startActivity(new Intent(activity, ProfileActivity.class));
             else
-                Router.clearAuth();
                 activity.startActivity(new Intent(activity, LoginActivity.class));
 
             activity.finish();
