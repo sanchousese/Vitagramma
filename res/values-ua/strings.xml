@@ -10,4 +10,7 @@
     <string name="patients">пацієнти</string>
     <string name="templates">шаблони</string>
     <string name="my_patients">Мої пацієнти</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="authorization">Авторизація</string>
+    <string name="synchronization">Синхронізація</string>
 </resources>

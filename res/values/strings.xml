@@ -3,8 +3,12 @@
     <string name="app_name" translatable="false">vitagramma</string>
     <string name="email_field" translatable="false">Email</string>
 
+
     <string name="motto">хранение и управление данными медицинских исследований</string>
     <string name="forget_pass">Забыли пароль?</string>
     <string name="login">ВОЙТИ</string>
     <string name="registration">РЕГИСТРАЦИЯ</string>
+    <string name="action_settings">Настройки</string>
+    <string name="authorization">Авторизация</string>
+    <string name="synchronization">Синхронизация</string>
 </resources>

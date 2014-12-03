@@ -3,10 +3,10 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:weightSum="1" android:background="#fff3f3f3">
+              android:weightSum="1" android:background="#fff3f3f3" android:visibility="visible">
     <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="98dp" android:background="@drawable/card" android:padding="15dp"
+            android:layout_height="82dp" android:background="@drawable/addit_info_off" android:padding="15dp"
             android:id="@+id/topLineProfile">
         <RelativeLayout
                 android:layout_width="wrap_content"
@@ -16,7 +16,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Рафальський Є.С."
                     android:id="@+id/profile_name"
                     android:textColor="@color/main_blue"
                     android:textStyle="bold" android:textSize="20dp"
@@ -34,68 +33,62 @@
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnSettingsProfile" android:src="@drawable/setting_button" android:padding="0dp"
-                android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+                android:id="@+id/btnSettingsProfile" android:src="@drawable/addit_info_button_on" android:padding="0dp"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"/>
     </RelativeLayout>
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_gravity="center_horizontal"
-            android:id="@+id/buttonsProfile">
-        <TableLayout
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="7.5dp" android:id="@+id/profileBtnList"
+            android:background="@color/main_background" android:visibility="visible">
+        <TableRow
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent" android:layout_above="@+id/rlTemplate" android:padding="15dp"
-                android:id="@+id/fourButtons">
-            <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent" android:layout_weight="1">
-                <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" android:layout_column="0" android:layout_weight="1"
-                        android:background="@drawable/profile_rounded_btn" android:layout_marginBottom="7.5dp"
-                        android:layout_marginRight="7.5dp" android:id="@+id/rlAnalysesBtn">
-                </RelativeLayout>
-                <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" android:layout_weight="1"
-                        android:background="@drawable/profile_rounded_btn" android:layout_marginLeft="7.5dp"
-                        android:layout_marginBottom="7.5dp" android:id="@+id/rlResearchesBtn">
-                </RelativeLayout>
-            </TableRow>
-            <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent" android:layout_weight="1">
-                <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" android:layout_weight="1"
-                        android:background="@drawable/profile_rounded_btn" android:layout_marginTop="7.5dp"
-                        android:layout_marginRight="7.5dp" android:id="@+id/rlDrugsBtn">
-                </RelativeLayout>
-                <RelativeLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" android:layout_weight="1"
-                        android:background="@drawable/profile_rounded_btn" android:layout_marginLeft="7.5dp"
-                        android:layout_marginTop="7.5dp" android:id="@+id/rlPatientsBtn">
-                </RelativeLayout>
-            </TableRow>
-        </TableLayout>
-        <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="55dp"
-                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
-                android:background="@drawable/profile_rounded_btn" android:id="@+id/rlTemplate" android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp" android:layout_marginBottom="15dp">
-            <LinearLayout
-                    android:orientation="horizontal"
+                android:layout_height="fill_parent" android:layout_weight="3">
+            <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:layout_centerInParent="true">
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/templates"
-                        android:id="@+id/textView3" android:textStyle="bold"/>
-            </LinearLayout>
-        </RelativeLayout>
-    </RelativeLayout>
+                    android:layout_height="fill_parent"
+                    android:text="@string/analyses"
+                    android:id="@+id/btnAnalysesProfile" android:layout_weight="1" android:layout_margin="3dp"
+                    android:drawableTop="@drawable/analyses" android:background="@drawable/profile_button"
+                    android:paddingBottom="3dp" android:textStyle="bold" android:textColor="#ffffffff"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/experiments"
+                    android:id="@+id/btnResearchesProfile" android:layout_weight="1" android:layout_margin="3dp"
+                    android:drawableTop="@drawable/researches" android:background="@drawable/profile_button"
+                    android:paddingBottom="3dp" android:textStyle="bold" android:textColor="#ffffeeff"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="3">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/drugs"
+                    android:id="@+id/btnDrugsProfile" android:layout_weight="1" android:layout_margin="3dp"
+                    android:drawableTop="@drawable/drugs" android:background="@drawable/profile_button"
+                    android:paddingBottom="3dp" android:textStyle="bold" android:textColor="#ffffffff"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/patients"
+                    android:id="@+id/btnPatientsProfile" android:layout_weight="1" android:layout_margin="3dp"
+                    android:drawableTop="@drawable/patiens" android:background="@drawable/profile_button"
+                    android:paddingBottom="3dp" android:textStyle="bold" android:textColor="#ffffffff"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="@string/templates"
+                    android:id="@+id/btnTemplatesProfile" android:layout_weight="1" android:layout_margin="3dp"
+                    android:drawableLeft="@drawable/templates" android:background="@drawable/profile_button"
+                    android:textStyle="bold" android:textColor="#ffffffff"/>
+        </TableRow>
+    </TableLayout>
+
 </LinearLayout>
 

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="main_blue" type="color">#ff2787d5</item>
+    <item name="blue_button_pressed" type="color">#ff000bd5</item>
+    <item name="main_background" type="color">#fff3f3f3</item>
+    <item name="motto_color" type="color">#ff999999</item>
+    <item name="green_button_accept" type="color">#ff00b015</item>
+    <item name="green_button_accept_pressed" type="color">#ff007712</item>
 </resources>
